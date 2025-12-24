@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOLESO | Shinomontaj Asaka</title>
+  <title>KOLESO - Avto xizmatlar</title>
+  <meta name="description"
+    content="KOLESO ustaxonasi: balansirovka, diska terish, razval sxajdeniya. Andijon viloyati, Asaka tuman.">
+  <meta name="keywords" content="KOLESO, balansirovka, diska terish, razval, Asaka, Andijon, ustxona">
+  <title>KOLESO - Avto xizmatlar</title>
+  <meta name="description"
+    content="KOLESO ustaxonasi: balansirovka, diska terish, razval sxajdeniya. Andijon viloyati, Asaka tuman.">
+  <meta name="keywords" content="KOLESO, balansirovka, diska terish, razval, Asaka, Andijon, ustxona">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">🛞 KOLESO</div> <button class="call-btn" onclick="openCall()">📞 Qo‘ng‘iroq</button>
+  </header> <!-- HERO -->
+  <section class="hero">
+    <h1>KOLESO — Shinomontaj va Avtoservis</h1>
+    <p>Tez • Sifatli • Ishonchli xizmat</p>
+    <p class="address">📍 Andijon viloyati, Asaka tumani, Lag‘mani yonida</p> <button class="main-btn"
+      onclick="scrollToForm()">ONLAYN YOZILISH</button>
+  </section> <!-- NEGA BIZ -->
+  <section class="why">
+    <h2>Nega aynan KOLESO?</h2>
+    <div class="why-grid">
+      <div>✅ Tajribali ustalar</div>
+      <div>✅ Zamonaviy uskunalar</div>
+      <div>✅ Halol va tez xizmat</div>
+      <div>✅ Qulay narxlar</div>
+      <div>✅ Mijoz roziligi birinchi o‘rinda</div>
+      <div>✅ Asakada qulay joylashuv</div>
+    </div>
+  </section> <!-- XIZMATLAR -->
+  <section class="services">
+    <h2>Bizning xizmatlar</h2>
+    <div class="service-box">
+      <h3>⚙️ Balansirovka</h3>
+      <p>G‘ildiraklarni aniq balanslash, titrashsiz yurish.</p>
+    </div>
+    <div class="service-box">
+      <h3>🛞 Diskka terish</h3>
+      <p>Shinalarni diskka professional o‘rnatish va yechish.</p>
+    </div>
+    <div class="service-box">
+      <h3>🚗 Razval – sxajdeniya</h3>
+      <p>G‘ildirak burchaklarini sozlash, shina kam yeyiladi.</p>
+    </div>
+    <div class="service-box">
+      <h3>🔩 Hada voy (ходовой)</h3>
+      <p>Yurish qismi diagnostikasi va ta’miri.</p>
+    </div>
+  </section> <!-- ONLAYN YOZILISH -->
+  <section class="booking" id="booking">
+    <h2>Onlayn yozilish</h2>
+    <form onsubmit="sendForm(event)"> <input type="text" name="name" placeholder="Ismingiz" required> <input type="tel"
+        name="phone" placeholder="Telefon raqam" required> <!-- Mashina modeli va raqami --> <input type="text"
+        name="carModel" placeholder="Mashina modeli" required> <input type="text" name="carNumber"
+        placeholder="Mashina raqami" required> <label> <input type="checkbox" name="service[]" value="Balansirovka">
+        Balansirovka </label> <label> <input type="checkbox" name="service[]" value="Diskka terish"> Diskka terish
+      </label> <label> <input type="checkbox" name="service[]" value="Razval-sxajdeniya"> Razval – sxajdeniya </label>
+      <label> <input type="checkbox" name="service[]" value="Hada voy (ходовой)"> Hada voy (ходовой) </label>
+      <!-- Sana va vaqt --> <input type="date" name="date" required> <input type="time" name="time" required> <button
+        type="submit">YUBORISH</button> </form>
+  </section> <!-- XARITA -->
+
+  <footer>
+    <p>📞 88027 1711</p>
+    <p>© 2025 KOLESO | Asaka</p>
+  </footer> <!-- CALL MODAL -->
+  <div class="call-modal" id="callModal">
+    <div class="call-box">
+      <h2>📞 Qo‘ng‘iroq qiling</h2> <a href="tel:880271711">88027 1711</a> <button onclick="closeCall()">Yopish</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
